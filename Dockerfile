@@ -2,9 +2,8 @@ FROM nodesource/trusty:6.2.0
 
 WORKDIR /usr/src/app
 
-COPY ./dist/ /usr/src/app
+COPY ./ /usr/src/app
 RUN npm -g install http-server
-
 
 EXPOSE 8080
 
